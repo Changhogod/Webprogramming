@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1.0">
-    <title>Without Viewport Meta</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1,maximum-scale=1">
+    <title>Media Feature</title>
+    <style>
+        /* 스마트폰 */
+        @media screen and (max-width: 767px){
+            body{
+                background-color: yellow;
+            }
+            
+        }
+        /* 태블릿PC 세로 */
+        @media screen and (min-width: 767px) and (max-width: 959px){
+            body {background-color: green;}
+        }
+        @media screen and (min-width: 900px) {
+            body{
+                background-color: aquamarine;
+            }
+            
+        }
+    </style>
 </head>
 <body>
-  <p>Lorem ipsum dolor sit amet</p>  
+    p>Lorem ipsum dolor sit amet</p>  
   <p>
     가수 임영웅씨를 보러 간다는 이유로 국회에 들어가려다 이를 막는 경찰을 폭행한 20대 여성이 1심에서 징역형의 집행유예를 선고받았다.
 
@@ -16,6 +35,6 @@
     A씨는 지난해 11월 서울 영등포구 국회의사당 앞에서 마스크를 착용하지 않은 채 잠옷 차림으로 국회의사당 단지 내로 진입하려고 한 혐의를 받는다.
     
     A씨는 당시 출입목적을 묻는 국회 경비 담당 경찰관에게 "임영웅씨를 만나러 가야한다"고 한 뒤 제지하는 경찰관을 향해 욕설하고 머리채를 붙잡아 발로 손등을 밟는 등 폭행을 가한 혐의도 있다.
-  </p>
+    
 </body>
 </html>
